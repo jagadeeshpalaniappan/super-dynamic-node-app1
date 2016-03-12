@@ -2,13 +2,12 @@
 
 module.exports = {
   app: {
-    title: 'AppName',
-    description: 'You Application Description..',
+    title: 'MEAN.JS',
+    description: 'Full-Stack JavaScript with MongoDB, Express, AngularJS, and Node.js',
     keywords: 'mongodb, express, angularjs, node.js, mongoose, passport',
     googleAnalyticsTrackingID: process.env.GOOGLE_ANALYTICS_TRACKING_ID || 'GOOGLE_ANALYTICS_TRACKING_ID'
   },
   port: process.env.PORT || 3000,
-  host: process.env.HOST || '0.0.0.0',
   templateEngine: 'swig',
   // Session Cookie settings
   sessionCookie: {
@@ -28,19 +27,6 @@ module.exports = {
   // for obsecurity reasons
   sessionKey: 'sessionId',
   sessionCollection: 'sessions',
-  // Lusca config
-  csrf: {
-    csrf: false,
-    csp: { /* Content Security Policy object */},
-    xframe: 'SAMEORIGIN',
-    p3p: 'ABCDEF',
-    hsts: {
-      maxAge: 31536000, // Forces HTTPS for one year
-      includeSubDomains: true,
-      preload: true
-    },
-    xssProtection: true
-  },
   logo: 'modules/core/client/img/brand/logo.png',
   favicon: 'modules/core/client/img/brand/favicon.ico',
   uploads: {

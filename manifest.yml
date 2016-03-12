@@ -1,13 +1,13 @@
 ---
 declared-services:
-  super-mongo:
+  mean-mongo:
     label: mongodb
     plan: 100
 applications:
-- name: super-dynamic-node
-  host: super-dynamic-node-${random-word}
+- name: mean
+  host: mean-${random-word}
   memory: 128M
   services:
-    - super-mongo
+  - mean-mongo
   env:
     NODE_ENV: cloud-foundry
